@@ -4,25 +4,49 @@
   <meta charset="UTF-8">
   <title>Agro Forte</title>
   <style>
-    body { background: #4CAF50; color: white; text-align: center; padding-top: 100px; font-family: Arial; margin: 0; }
-    h1 { font-size: 48px; margin-bottom: 10px; }
-    p { font-size: 20px; margin-bottom: 30px; }
-    button { padding: 15px 30px; font-size: 18px; background: white; color: #4CAF50; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
-    button:hover { background: #f0f0f0; }
+    body { 
+      background: linear-gradient(#2E7D32, #4CAF50); 
+      color: white; 
+      text-align: center; 
+      padding-top: 80px; 
+      font-family: Arial; 
+      margin: 0;
+      min-height: 100vh;
+    }
+    .arvore { font-size: 80px; margin-bottom: 20px; }
+    h1 { font-size: 48px; margin: 10px 0; }
+    p { font-size: 20px; margin-bottom: 30px; max-width: 500px; margin-left: auto; margin-right: auto; }
+    button { 
+      padding: 15px 40px; 
+      font-size: 18px; 
+      background: white; 
+      color: #2E7D32; 
+      border: none; 
+      border-radius: 10px; 
+      cursor: pointer; 
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin: 10px;
+    }
+    button:hover { background: #f0f0f0; transform: scale(1.05); }
     #tela2 { display: none; }
   </style>
 </head>
 <body>
 
   <div id="tela1">
+    <div class="arvore">🌳🌱🌳</div>
     <h1>Agro Forte</h1>
     <p>Futuro Sustentável</p>
     <button onclick="comecar()">Começar</button>
   </div>
 
   <div id="tela2">
-    <h1>Bem-vindo à Agro Forte!</h1>
-    <p>Aqui você encontra soluções para o campo 🌾</p>
+    <div class="arvore">🌍</div>
+    <h1>Vamos cuidar do planeta!</h1>
+    <p>Plante uma árvore hoje. Cada árvore plantada ajuda a combater as mudanças climáticas e deixa o mundo mais verde para as próximas gerações.</p>
+    <button onclick="plantar()">🌱 Plantar uma Árvore</button>
+    <br>
     <button onclick="voltar()">Voltar</button>
   </div>
 
@@ -34,6 +58,9 @@
     function voltar() {
       document.getElementById('tela2').style.display = 'none';
       document.getElementById('tela1').style.display = 'block';
+    }
+    function plantar() {
+      alert('Obrigado por ajudar! 🌳 Lembre-se: plante, cuide e preserve.');
     }
   </script>
 
