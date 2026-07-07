@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Agro Forte</title>
-  <style>
-    body { background: lightgreen; text-align: center; padding-top: 100px; font-family: Arial; }
-    h1 { color: darkgreen; }
-  </style>
+<meta charset="UTF-8">
+<title>Agro Forte</title>
+<style>
+body { 
+  background: lightgreen; 
+  text-align: center; 
+  padding-top: 100px; 
+  font-family: Arial; 
+}
+h1 { 
+  color: darkgreen; 
+}
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background: darkgreen;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+</style>
 </head>
 <body>
-  <h1>Agro Forte, Futuro Sustentável</h1>
-  <p>Meu site fala sobre cuidar da terra pra ter comida pra sempre</p>
-  <button onclick="alert('Plante uma árvore!')">Clique aqui</button>
+<h1>Agro Forte, Sustainable Future</h1>
+<p>Our site talks about taking care of the land to have food forever</p>
+<button onclick="alert('Plant a tree!')">Click here</button>
 </body>
 </html>
